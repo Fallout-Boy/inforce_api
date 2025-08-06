@@ -12,9 +12,9 @@ services:
       - .env
 
   db:
-    image: postgres
+    image: postgres:14
     environment:
-      POSTGRES_DB: lunch_db
+      POSTGRES_DB: inforce_db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     volumes:

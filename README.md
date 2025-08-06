@@ -1,30 +1,30 @@
 # inforce_api
 
-1. ¬становити Docker
-2. «апустити проект:
+1. Install Docker
+
+2. Run the project:
 
 
     docker-compose up --build
 
 
-3. «астосувати м≥грац≥њ:
+3. Apply migrations:
 
 
     docker-compose run --rm web python manage.py makemigrations
     docker-compose run --rm web python manage.py migrate
 
 
-“ести:
+Tests:
 
     docker-compose run --rm test
 
 
-
 API:
-POST /api/register/ Ч реЇстрац≥€
-POST /api/token/ Ч лог≥н 
-POST /api/restaurants/ Ч додати ресторан
-POST /api/menus/ Ч додати меню
-GET /api/today-menus/ Ч перегл€д меню на сьогодн≥
-POST /api/vote/ Ч голосуванн€
-GET /api/results/ - результати голосуванн€
+- POST /api/register/ Ч registration
+- POST /api/token/ Ч login
+- POST /api/restaurants/ Ч add a restaurant
+- POST /api/menus/ Ч add a menu
+- GET /api/today-menus/ Ч view today's menus
+- POST /api/vote/ Ч vote
+- GET /api/results/ Ч voting results
